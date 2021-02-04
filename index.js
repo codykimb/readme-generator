@@ -2,8 +2,9 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
+// const utils = require("./utils")
 
-const generateMarkdown = require("./utils/generateMarkdown.js")
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -27,7 +28,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "projectName",
+        name: "title",
         message: "What is your project's name?" + "(Required)",
         validate: nameInput => {
             if (nameInput) {
@@ -51,46 +52,47 @@ const questions = [
     },
     {
         type: "input",
-        name: "installCommand",
+        name: "installation",
         message: "What command should be run to install your dependencies?",
         default: "npm i"
     },
     {
         type: "input",
-        name: "testCommand",
+        name: "tests",
         message: "What command should be run to run tests?",
         default: "npm test"
     },
     {
         type: "input",
-        name: "using",
+        name: "usage",
         message: "What does the user need to know about using the repo?"
     },
     {
         type: "input",
-        name: "contributing",
+        name: "contribute",
         message: "What does the user need to know about contributing to the repo?"
     },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile('./dist/README.md', fileName, data, err => {
+const writeToFile = (fileName, data) => {
+    fs.writeFile(fileName, data, err => {
         if (err) {
-          reject(err);
-          return;
+          return console.log(err);
         }
   
-        resolve({
-          ok: true,
-          message: 'Your README.md file has been created!'
-        });
+        else {
+          console.log('Your README.md file has been created!')
+        };
       });
     };
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
+    .then(data => {
+        writeToFile("./dist/README.md", generateMarkdown(data));
+    })
 }
 
 // Function call to initialize app
