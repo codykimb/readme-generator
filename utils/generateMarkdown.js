@@ -39,25 +39,24 @@ function generateMarkdown(data) {
   - [Questions](#questions)
   ---
   ## Installation
-  ​
-  ${data.installation}
+  ###### Run ${data.installation} to install dependencies.
   ---
   ## Usage
-  ${data.usage}
+  ###### ${data.usage}
   ---
   ## License
-  This project is licensed under the terms of ${data.license} license.
+  ###### This project is licensed under the terms of ${data.license} license.
   ---
   ## Contributing
-  Run ${data.contribute} to install dependencies.
+  ###### ${data.contribute}
   ---
   ## Tests
-  Run ${data.tests} to run tests.
+  ###### Run ${data.tests} to run tests.
   ---
   ## Questions
-  If you have any questions about this repo,
-  contact ${data.username} at ${data.email}
-  https://github.com/${data.username}
+  ###### If you have any questions about this repo,
+  ###### contact ${data.username} at ${data.email}
+  ###### https://github.com/${data.username}/${data.title}
 `;
 }
 

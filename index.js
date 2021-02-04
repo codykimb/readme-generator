@@ -80,7 +80,6 @@ const writeToFile = (fileName, data) => {
         if (err) {
           return console.log(err);
         }
-  
         else {
           console.log('Your README.md file has been created!')
         };
