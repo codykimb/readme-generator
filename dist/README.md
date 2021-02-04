@@ -27,6 +27,5 @@
   ##### Run npm test to run tests.
   ---
   ## Questions
-  ##### If you have any questions about this repo,
-  ##### contact codykimb at codykimbell@gmail.com
+  ##### If you have any questions about this repo, contact codykimb at codykimbell@gmail.com
   ##### https://github.com/codykimb/readme-generator

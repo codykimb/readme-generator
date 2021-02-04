@@ -54,8 +54,7 @@ function generateMarkdown(data) {
   ##### Run ${data.tests} to run tests.
   ---
   ## Questions
-  ##### If you have any questions about this repo,
-  ##### contact ${data.username} at ${data.email}
+  ##### If you have any questions about this repo, contact ${data.username} at ${data.email}
   ##### https://github.com/${data.username}/${data.title}
 `;
 }
