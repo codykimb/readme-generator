@@ -1,7 +1,7 @@
 # readme-generator
 
   ##  Description
-  generates a read me
+  ##### generates a read me
   ---
   ## Table of Contents
   - [Installation](#installation)
@@ -12,21 +12,21 @@
   - [Questions](#questions)
   ---
   ## Installation
-  ###### Run npm i to install dependencies.
+  ##### Run npm i to install dependencies.
   ---
   ## Usage
-  ###### not much
+  ##### not much
   ---
   ## License
-  ###### This project is licensed under the terms of Apache license.
+  ##### This project is licensed under the terms of Apache license.
   ---
   ## Contributing
-  ###### cody contributed everything
+  ##### cody contributed everything
   ---
   ## Tests
-  ###### Run npm test to run tests.
+  ##### Run npm test to run tests.
   ---
   ## Questions
-  ###### If you have any questions about this repo,
-  ###### contact codykimb at codykimbell@gmail.com
-  ###### https://github.com/codykimb/readme-generator
+  ##### If you have any questions about this repo,
+  ##### contact codykimb at codykimbell@gmail.com
+  ##### https://github.com/codykimb/readme-generator
