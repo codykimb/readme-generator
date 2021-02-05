@@ -1,31 +1,59 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (license === "MIT") {
-    return;
+function renderLicenseBadge(data) {
+  if (data.license === "MIT") {
+    data.badge = "![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)";
   }
-  else if (license === "Apache") {
-    return;
+  else if (data.license === "Apache") {
+    data.badge =  "![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)";
   }
-  else if (license === "GPL") {
-    return;
+  else if (data.license === "GPL") {
+    data.badge =  "![License: GPL v3](https://img.shields.io/badge/license-GPLv3-green.svg)"
   }
-  else if (!license) {
-    return;
+  else {
+    data.badge =  "";
   }
+  return data;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(answers) {
+  if (answers.license === "MIT") {
+    answers.link = "(https://opensource.org/licenses/MIT)";
+  }
+  else if (answers.license === "Apache") {
+    answers.link = "(https://opensource.org/licenses/Apache-2.0)";
+  }
+  else if (answers.license === "GPL") {
+    answers.link = "(https://gnu.org/licenses/gpl-3.0)"
+  }
+  else {
+    answers.link = "";
+  }
+  return answers;
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(answers) {
+  if (!answers.license) {
+    answers.lsection = "";
+  }
+  else {
+    answers.lsection = `---
+  ## License
+  ##### This project is licensed under the terms of ${answers.license} license.
+  ${answers.link}`
+  }
+  return answers
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ${data.badge}
 
   ##  Description
   ##### ${data.description}
@@ -43,9 +71,7 @@ function generateMarkdown(data) {
   ---
   ## Usage
   ##### ${data.usage}
-  ---
-  ## License
-  ##### This project is licensed under the terms of ${data.license} license.
+  ${data.lsection}
   ---
   ## Contributing
   ##### ${data.contribute}
@@ -59,4 +85,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {generateMarkdown, renderLicenseBadge, renderLicenseLink, renderLicenseSection};

@@ -1,7 +1,9 @@
 # readme-generator
 
+  ![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)
+
   ##  Description
-  ##### generates a read me
+  ##### generates a README.MD using a node app
   ---
   ## Table of Contents
   - [Installation](#installation)
@@ -15,13 +17,14 @@
   ##### Run npm i to install dependencies.
   ---
   ## Usage
-  ##### not much
+  ##### you will need to insttall dependencies first!
   ---
   ## License
   ##### This project is licensed under the terms of Apache license.
+  (https://opensource.org/licenses/Apache-2.0)
   ---
   ## Contributing
-  ##### cody contributed everything
+  ##### cody kimb is the main contributor to this repo
   ---
   ## Tests
   ##### Run npm test to run tests.

@@ -4,7 +4,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 // const utils = require("./utils")
 
-const generateMarkdown = require("./utils/generateMarkdown.js");
+const {generateMarkdown, renderLicenseBadge, renderLicenseLink, renderLicenseSection} = require("./utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -89,6 +89,15 @@ const writeToFile = (fileName, data) => {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
+    .then(data =>{
+        return renderLicenseBadge(data);
+    })
+    .then(data =>{
+        return renderLicenseLink(data);
+    })
+    .then(data =>{
+        return renderLicenseSection(data);
+    })
     .then(data => {
         writeToFile("./dist/README.md", generateMarkdown(data));
     })
