@@ -9,7 +9,7 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contributing](#contribute)
+  - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
   ---
@@ -17,7 +17,7 @@
   ##### Run npm i to install dependencies.
   ---
   ## Usage
-  #### You will need to install dependencies first!
+  ##### You will need to install dependencies first!
   ---
   ## License
   ##### This project is licensed under the terms of Apache license.
