@@ -14,21 +14,21 @@
   - [Questions](#questions)
   ---
   ## Installation
-  ##### Run npm i to install dependencies.
+  #### Run npm i to install dependencies.
   ---
   ## Usage
-  ##### you will need to insttall dependencies first!
+  #### you will need to insttall dependencies first!
   ---
   ## License
-  ##### This project is licensed under the terms of Apache license.
+  #### This project is licensed under the terms of Apache license.
   #### (https://opensource.org/licenses/Apache-2.0)
   ---
   ## Contributing
-  ##### cody kimb is the main contributor to this repo
+  #### cody kimb is the main contributor to this repo
   ---
   ## Tests
-  ##### Run npm test to run tests.
+  #### Run npm test to run tests.
   ---
   ## Questions
-  ##### If you have any questions about this repo, contact codykimb at codykimbell@gmail.com
-  ##### https://github.com/codykimb/
+  #### If you have any questions about this repo, contact codykimb at codykimbell@gmail.com
+  #### https://github.com/codykimb/
