@@ -1,19 +1,19 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(data) {
-  if (data.license === "MIT") {
-    data.badge = "![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)";
+function renderLicenseBadge(answers) {
+  if (answers.license === "MIT") {
+    answers.badge = "![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)";
   }
-  else if (data.license === "Apache") {
-    data.badge =  "![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)";
+  else if (answers.license === "Apache") {
+    answers.badge =  "![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)";
   }
-  else if (data.license === "GPL") {
-    data.badge =  "![License: GPL v3](https://img.shields.io/badge/license-GPLv3-green.svg)"
+  else if (answers.license === "GPL") {
+    answers.badge =  "![License: GPL v3](https://img.shields.io/badge/license-GPLv3-green.svg)"
   }
   else {
-    data.badge =  "";
+    answers.badge =  "";
   }
-  return data;
+  return answers;
 }
 
 // TODO: Create a function that returns the license link
@@ -62,7 +62,7 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contributing](#contribute)
+  - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
   ---
