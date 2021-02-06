@@ -44,7 +44,7 @@ function renderLicenseSection(answers) {
     answers.lsection = `---
   ## License
   ##### This project is licensed under the terms of ${answers.license} license.
-  ${answers.link}`
+  #####${answers.link}`
   }
   return answers
 }
@@ -81,7 +81,7 @@ function generateMarkdown(data) {
   ---
   ## Questions
   ##### If you have any questions about this repo, contact ${data.username} at ${data.email}
-  ##### https://github.com/${data.username}/${data.title}
+  ##### https://github.com/${data.username}
 `;
 }
 
