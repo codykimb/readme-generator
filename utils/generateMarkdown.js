@@ -56,7 +56,7 @@ function generateMarkdown(data) {
   ${data.badge}
 
   ##  Description
-  #### ${data.description}
+  ##### ${data.description}
   ---
   ## Table of Contents
   - [Installation](#installation)
@@ -67,21 +67,21 @@ function generateMarkdown(data) {
   - [Questions](#questions)
   ---
   ## Installation
-  #### Run ${data.installation} to install dependencies.
+  ##### Run ${data.installation} to install dependencies.
   ---
   ## Usage
-  #### ${data.usage}
+  ##### ${data.usage}
   ${data.lsection}
   ---
   ## Contributing
-  #### ${data.contribute}
+  ##### ${data.contribute}
   ---
   ## Tests
-  #### Run ${data.tests} to run tests.
+  ##### Run ${data.tests} to run tests.
   ---
   ## Questions
-  #### If you have any questions about this repo, contact ${data.username} at ${data.email}
-  #### https://github.com/${data.username}
+  ##### If you have any questions about this repo, contact ${data.username} at ${data.email}
+  ##### https://github.com/${data.username}
 `;
 }
 
