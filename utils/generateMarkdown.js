@@ -44,7 +44,7 @@ function renderLicenseSection(answers) {
     answers.lsection = `---
   ## License
   ##### This project is licensed under the terms of ${answers.license} license.
-  #####${answers.link}`
+  ##### ${answers.link}`
   }
   return answers
 }
